@@ -1,20 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: seleniumdemoapp-deployment
+  name: seleniumtestdemoapp-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: 
+      app: seleniumtestdemoapp
   template:
     metadata:
       labels:
-        app: seleniumdemoapp
+        app: seleniumtestdemoapp
     spec:
       containers:
-        - name: seleniumdemoapp
-          image: lnalagandla/kubedemos12:seleniumtestimage   # use your Docker Hub image
+        - name: seleniumtestdemoapp
+          image: komsujani23/kubedemos:seleniumtestimage   # use your Docker Hub image
           ports:
             - containerPort: 5000
-
