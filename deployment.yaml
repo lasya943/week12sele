@@ -17,3 +17,4 @@ spec:
           image: lnalagandla/kubedemos12:seleniumtestimage   # use your Docker Hub image
           ports:
             - containerPort: 5000
+
